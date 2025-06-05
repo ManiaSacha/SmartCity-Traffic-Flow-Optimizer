@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated files
+warsaw_graph.graphml
+*.png
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
