@@ -1,5 +1,7 @@
 # SmartCity Traffic Flow Optimizer & Predictor 🚦🏙️
 
+![Project Logo](logo/SmartCity%20Traffic%20Flow%20Optimizer.png)
+
 A Python-based application to download, analyze, simulate, and predict urban traffic flow, demonstrated with data from Warsaw, Poland. This project showcases data processing, machine learning, and interactive visualization techniques for smart city applications.
 
 ## 🌟 Key Features
@@ -18,6 +20,8 @@ A Python-based application to download, analyze, simulate, and predict urban tra
     - Static HTML heatmap of simulated traffic conditions across the city for a chosen hour.
 
 ## 📸 Visualizations & Dashboard Preview
+
+![Project Showcase GIF](logo/Traffic%20Flow%20Optimizer.gif)
 
 *(Consider adding screenshots here to showcase your project!)*
 

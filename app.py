@@ -13,6 +13,20 @@ SEGMENTS_CSV_PATH = "warsaw_road_segments.csv"
 
 st.set_page_config(page_title="Warsaw Traffic Predictor & Map", layout="wide", initial_sidebar_state="expanded")
 
+# --- App Title and Logo --- 
+LOGO_PATH = "logo/SmartCity Traffic Flow Optimizer.png"
+
+header_col1, header_col2 = st.columns([1, 4]) # Adjust ratio as needed
+with header_col1:
+    if os.path.exists(LOGO_PATH):
+        st.image(LOGO_PATH, width=100) # Adjust width as needed
+    else:
+        st.warning(f"Logo not found at {LOGO_PATH}")
+
+with header_col2:
+    st.title("🚦 SmartCity Traffic Flow Predictor + Map")
+    st.markdown("Select a road segment and time to predict traffic speed and visualize it on an interactive map.")
+
 # --- Load Data and Models (with caching) ---
 @st.cache_resource
 def load_model_and_encoder():
@@ -55,9 +69,6 @@ model, segment_encoder = load_model_and_encoder()
 segments_with_geo = load_segment_data()
 
 # --- Streamlit UI ---
-st.title("🚦 SmartCity Traffic Flow Predictor + Map")
-st.markdown("Select a road segment and time to predict traffic speed and visualize it on an interactive map.")
-
 if model is None or segment_encoder is None or segments_with_geo.empty:
     st.warning("Application cannot start due to missing data or model. Please check error messages above.")
 else:
