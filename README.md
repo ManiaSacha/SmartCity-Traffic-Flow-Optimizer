@@ -26,13 +26,13 @@ A Python-based application to download, analyze, simulate, and predict urban tra
 
 
 1.  **Warsaw Road Network Plot:**
-    `[Insert screenshot of warsaw_map.png here]`
+    
 
 2.  **Simulated Traffic Heatmap (Folium):**
-    `[Insert screenshot of traffic_heatmap.html here]`
+    
 
 3.  **Interactive Streamlit Dashboard:**
-    `[Insert screenshot(s) of the Streamlit app (app.py) in action, showing prediction and map visualization here]`
+    
 
 ## 🛠️ Technologies Used
 
