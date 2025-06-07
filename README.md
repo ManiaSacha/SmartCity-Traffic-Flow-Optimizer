@@ -157,6 +157,10 @@ This will start the Streamlit server, and you can access the dashboard in your w
 - Add options for historical data analysis and trend visualization.
 - Deploy the Streamlit application to a cloud platform.
 
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 📞 Contact
 
 - **Manya Sacha**
