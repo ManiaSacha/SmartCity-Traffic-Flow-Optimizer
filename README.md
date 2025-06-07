@@ -23,7 +23,7 @@ A Python-based application to download, analyze, simulate, and predict urban tra
 
 ![Project Showcase GIF](logo/Traffic%20Flow%20Optimizer.gif)
 
-*(Consider adding screenshots here to showcase your project!)*
+
 
 1.  **Warsaw Road Network Plot:**
     `[Insert screenshot of warsaw_map.png here]`
@@ -163,3 +163,4 @@ This will start the Streamlit server, and you can access the dashboard in your w
 - GitHub: [ManiaSacha](https://github.com/ManiaSacha)
 - LinkedIn: [Manya Sacha](https://www.linkedin.com/in/manya-sacha-apply-ml-engineer/)
 - Email: maniasacha.dev@gmail.com
+- Portfolio: https://mania-sacha.netlify.app/
