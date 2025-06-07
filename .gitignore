@@ -6,7 +6,6 @@ __pycache__/
 
 # Generated files
 warsaw_graph.graphml
-*.png
 
 # Environment variables
 .env
