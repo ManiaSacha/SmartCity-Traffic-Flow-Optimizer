@@ -16,10 +16,10 @@ st.set_page_config(page_title="Warsaw Traffic Predictor & Map", layout="wide", i
 # --- App Title and Logo --- 
 LOGO_PATH = "logo/SmartCity Traffic Flow Optimizer.png"
 
-header_col1, header_col2 = st.columns([1, 4]) # Adjust ratio as needed
+header_col1, header_col2 = st.columns([1, 4]) 
 with header_col1:
     if os.path.exists(LOGO_PATH):
-        st.image(LOGO_PATH, width=100) # Adjust width as needed
+        st.image(LOGO_PATH, width=100) 
     else:
         st.warning(f"Logo not found at {LOGO_PATH}")
 
@@ -27,7 +27,7 @@ with header_col2:
     st.title("🚦 SmartCity Traffic Flow Predictor + Map")
     st.markdown("Select a road segment and time to predict traffic speed and visualize it on an interactive map.")
 
-# --- Load Data and Models (with caching) ---
+# --- Loading Data and Models (with caching) ---
 @st.cache_resource
 def load_model_and_encoder():
     if not os.path.exists(MODEL_PATH) or not os.path.exists(ENCODER_PATH):
@@ -55,7 +55,7 @@ def load_segment_data():
                 st.error("Cannot create 'segment_id'. 'u' and 'v' columns are missing.")
                 return pd.DataFrame()
         
-        # Convert WKT geometry to Shapely objects
+        # Converting WKT geometry to Shapely objects
         segments_df["geometry_obj"] = segments_df["geometry"].apply(wkt.loads)
         
         named_segments = segments_df[segments_df["name"].notna()].copy()
@@ -174,6 +174,3 @@ else:
         else:
             st.info("Click 'Predict and Show on Map' to see the visualization here.")
 
-# Project steps in sidebar (optional, can be moved or removed)
-# st.sidebar.header("Project Progress")
-# st.sidebar.markdown("1. Get Map Data ✅ ... 6. Prediction Dashboard ✅ ... **7. Add Map Viz (You are here!)**")
